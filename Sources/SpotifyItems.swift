@@ -73,9 +73,10 @@ public struct SpotifyUser: SpotifySearchItem {
 }
 
 public struct SpotifyTrack: SpotifySearchItem, SpotifyLibraryItem {
-    public var id:    String
-    public var uri:   String
-    public var name:  String
+    public var id:          String
+    public var uri:         String
+    public var name:        String
+    public var duration_ms: Double
     
     // Simplified track objects don't contain album reference
     // so it should be an optional
